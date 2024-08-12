@@ -1,0 +1,8 @@
+import 'package:riverpod/riverpod.dart';
+import 'package:riverpod_sample/services/customer_services.dart';
+import 'package:riverpod_sample/services/product_services.dart';
+import 'package:riverpod_sample/services/purchase_service.dart';
+
+final productServiceProvider = Provider((ref) => ProductService(ref));
+final customerServiceProvider = Provider((ref) => CustomerService(ref));
+final purchaseServiceProvider = Provider((ref) => PurchaseService(ref));
